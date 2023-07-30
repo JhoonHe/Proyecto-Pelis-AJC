@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="buscar" (input)="busqueda()">
+<ul>
+    <li *ngFor="let resultado of resultados">
+        {{ resultado.titulo }} - {{ resultado.anioLanzamiento }}
+        <img [src]="resultado.url">
+    </li>
+</ul> 

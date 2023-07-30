@@ -1,0 +1,22 @@
+import { Component } from '@angular/core';
+import { movies } from 'src/app/models/movies';
+import { series } from 'src/app/models/series';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
+})
+export class HomeComponent {
+  contenido: any = movies.concat(series);
+  buscar: any;
+  resultados: any[] = this.contenido;
+
+  busqueda() {
+    this.resultados = this.contenido.filter((pelicula: any) =>
+      pelicula.titulo.toLowerCase().includes(this.buscar.toLowerCase()) || pelicula.descripcion.toLowerCase().includes(this.buscar.toLowerCase())
+    );
+    console.log(this.resultados[0].url);
+    
+  }
+}
