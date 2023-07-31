@@ -1,0 +1,155 @@
+.contenido {
+    /* border: 2px green solid; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 450px 0 100px 0;
+    background-color: #282782;
+    position: relative;
+}
+
+.contenido .elementos {
+    /* border: 2px pink solid; */
+    position: absolute;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #000000 100px, #0a0920, #282782);
+}
+
+.contenido h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.buscador {
+    /* border: 2px black solid; */
+    background-color: #d9d9d9;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.buscador input {
+    border: none;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    padding: 0px 10px;
+    width: 100%;
+    font-size: 15px;
+    /* border: 2px black solid; */
+}
+
+.buscador input:focus {
+    outline: none;
+}
+
+.portadas {
+    /* border: 2px yellow solid; */
+    width: 95%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.portadas .portada {
+    /* border: 2px white solid; */
+    width: 200px;
+    height: 280px;
+    display: flex;
+    position: relative;
+    opacity: 0.9;
+    box-shadow: 5px 5px 10px;
+    cursor: pointer;
+}
+
+.portadas .portada:hover {
+    transform: scale(102%);
+    opacity: 0.7;
+}
+
+.portadas .portada img {
+    width: 100%;
+}
+
+.portadas .portada .categoria {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0a0920;
+    color: white;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+
+    .contenido h1 {
+        font-size: 45px;
+    }
+
+    .contenido .elementos {
+        gap: 50px;
+    }
+
+    .contenido {
+        margin: 50px 0;
+        padding: 350px 0 100px 0;
+    }
+
+    .buscador {
+        width: 400px;
+    }
+
+    .portadas {
+        gap: 25px 15px;
+    }
+
+    .portadas .portada {
+        width: 180px;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .contenido {
+        padding: 350px 0 100px 0;
+    }
+
+    .contenido h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .buscador {
+        width: 235px;
+        height: 45px;
+    }
+
+    .portadas {
+        gap: 30px;
+    }
+
+    .portadas .portada {
+        width: 140px;
+        height: 220px;
+    }
+
+}
