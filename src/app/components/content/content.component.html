@@ -1,3 +1,21 @@
-<input type="text" [(ngModel)]="buscar" (input)="busqueda()"> 
-
-<li *ngFor="let resultado of resultados">{{ resultado.titulo }} - {{ resultado.anioLanzamiento }}</li>
+<div class="contenido">
+    <div class="elementos">
+        <h1>{{titulo}}</h1>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar {{titulo | lowercase}}" id="buscador" type="text"
+                [(ngModel)]="buscar" (input)="busqueda()" autocomplete="off">
+            <!-- <button><i class="fa-solid fa-magnifying-glass"></i></button> -->
+        </div>
+    </div>
+    <div class="portadas">
+        <div class="portada" *ngFor="let resultado of resultados">
+            <div class="categoria">
+                <p>{{resultado.tipo}}</p>
+            </div>
+            <img [src]="resultado.url">
+            <!-- <div class="genero" *ngFor="let item of resultado.genero">
+                {{item}}
+            </div> -->
+        </div>
+    </div>
+</div>

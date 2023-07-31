@@ -13,6 +13,7 @@ export class ContentComponent {
   nombreCategoria: string = ''
   buscar: any
   resultados: any[] = [];
+  titulo: string = "";
 
   constructor(private routeActivate: ActivatedRoute, private router: Router) {
 
@@ -28,8 +29,10 @@ export class ContentComponent {
 
       if (this.nombreCategoria === "pelicula") {
         this.contenido = movies
+        this.titulo = "Películas"
       } else {
         this.contenido = series
+        this.titulo = "Series"
       }
     });
 

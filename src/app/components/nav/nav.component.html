@@ -1,9 +1,10 @@
-<div class="peliculas">
-    <button (click)="filtrar(this.pelicula)">PELICULAS</button>
-</div>
-<div class="series">
-    <button (click)="filtrar(this.series)">SERIES</button>
-</div>
-<div>
-    <button routerLink="/">INICIO </button>
-</div>
+<nav>
+    <div class="logo"><img src="../../../assets/img/Logo.png" alt="logo">
+        <h2>PELIS AJC</h2>
+    </div>
+    <ul>
+        <li><button routerLink="/">Inicio</button></li>
+        <li><button (click)="filtrar(this.pelicula)">Películas</button></li>
+        <li><button (click)="filtrar(this.series)">Series</button></li>
+    </ul>
+</nav>

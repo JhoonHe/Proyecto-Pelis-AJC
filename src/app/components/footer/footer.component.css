@@ -1,0 +1,45 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    height: 200px;
+    padding: 0 20px;
+}
+
+footer .redes {
+    display: flex;
+    gap: 30px;
+}
+
+footer .redes i {
+    color: white;
+    font-size: 50px;
+}
+
+footer .elementos {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .info {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px white solid;
+    padding-bottom: 50px;
+}

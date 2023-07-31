@@ -1,0 +1,36 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+    color: white;
+}
+
+.logo img {
+    width: 50px;
+}
+
+nav {
+    /* border: 2px black solid; */
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav button {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
