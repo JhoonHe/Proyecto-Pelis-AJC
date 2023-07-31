@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="portadas">
-        <div class="portada" *ngFor="let resultado of resultados">
+        <div class="portada" *ngFor="let resultado of resultados" (click)="verPelicula(resultado.id)">
             <div class="categoria">
                 <p>{{resultado.tipo}}</p>
             </div>

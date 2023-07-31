@@ -56,7 +56,8 @@ const movies = [
     url: "https://cuevana3.eu/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FfNtqD4BTFj0Bgo9lyoAtmNFzxHN.jpg&w=256&q=75",
     genero: ["Comedia", "Aventura", "Fantasía"],
     duracion: "1h 40min",
-    calificacion: 7.8
+    calificacion: 7.8,
+    trailer: "zh4KhVSMwtQ"
   },
   {
     id: "1007",

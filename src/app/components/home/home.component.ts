@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { movies } from 'src/app/models/movies';
 import { series } from 'src/app/models/series';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,10 @@ export class HomeComponent {
   contenido: any = movies.concat(series);
   buscar: any;
   resultados: any[] = [];
+
+  constructor(private router: Router) {
+
+  }
 
   busqueda() {
 
@@ -23,5 +28,10 @@ export class HomeComponent {
 
     }
 
+  }
+
+  verPelicula(id: string) {
+    console.log(id);
+    this.router.navigate(['/detalle', id]);
   }
 }
