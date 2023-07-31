@@ -1,0 +1,3 @@
+<input type="text" [(ngModel)]="buscar" (input)="busqueda()"> 
+
+<li *ngFor="let resultado of resultados">{{ resultado.titulo }} - {{ resultado.anioLanzamiento }}</li>

@@ -13,10 +13,10 @@ export class HomeComponent {
   resultados: any[] = this.contenido;
 
   busqueda() {
+    
     this.resultados = this.contenido.filter((pelicula: any) =>
       pelicula.titulo.toLowerCase().includes(this.buscar.toLowerCase()) || pelicula.descripcion.toLowerCase().includes(this.buscar.toLowerCase())
     );
-    console.log(this.resultados[0].url);
     
   }
 }
