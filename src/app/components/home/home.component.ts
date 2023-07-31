@@ -10,13 +10,18 @@ import { series } from 'src/app/models/series';
 export class HomeComponent {
   contenido: any = movies.concat(series);
   buscar: any;
-  resultados: any[] = this.contenido;
+  resultados: any[] = [];
 
   busqueda() {
-    
-    this.resultados = this.contenido.filter((pelicula: any) =>
-      pelicula.titulo.toLowerCase().includes(this.buscar.toLowerCase()) || pelicula.descripcion.toLowerCase().includes(this.buscar.toLowerCase())
-    );
-    
+
+    if (this.buscar !== "") {
+      this.resultados = this.contenido.filter((pelicula: any) =>
+        pelicula.titulo.toLowerCase().includes(this.buscar.toLowerCase()) || pelicula.descripcion.toLowerCase().includes(this.buscar.toLowerCase())
+      );
+    } else {
+      this.resultados = []
+
+    }
+
   }
 }

@@ -1,7 +1,29 @@
-<input type="text" [(ngModel)]="buscar" (input)="busqueda()">
+<!-- <input type="text" [(ngModel)]="buscar" (input)="busqueda()">
 <ul>
     <li *ngFor="let resultado of resultados">
         {{ resultado.titulo }} - {{ resultado.anioLanzamiento }}
         <img [src]="resultado.url">
     </li>
-</ul> 
+</ul>  -->
+
+<div class="contenido">
+    <div class="elementos">
+        <h1>Películas y series</h1>
+        <div class="buscador">
+            <input type="text" placeholder="Buscar contenido" id="buscador" type="text" [(ngModel)]="buscar"
+                (input)="busqueda()">
+            <!-- <button><i class="fa-solid fa-magnifying-glass"></i></button> -->
+        </div>
+    </div>
+    <div class="portadas">
+        <div class="portada" *ngFor="let resultado of resultados">
+            <div class="categoria">
+                <p>{{resultado.tipo}}</p>
+            </div>
+            <img [src]="resultado.url">
+            <!-- <div class="genero" *ngFor="let item of resultado.genero">
+                {{item}}
+            </div> -->
+        </div>
+    </div>
+</div>
