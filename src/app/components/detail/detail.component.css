@@ -1,18 +1,20 @@
 .contenido {
     /* border: 2px green solid; */
     background-color: #282782;
-    height: 1000px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 100px;
     background-image: linear-gradient(to bottom, #000000 100px, #0a0920, #282782);
+    padding: 70px 0;
 }
 
 .contenido .detalle {
     /* border: 2px red solid; */
     width: 1000px;
+    height: auto;
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
@@ -23,12 +25,12 @@
 
 .contenido .detalle .imagen {
     background-color: gray;
-    height: 350px;
-    width: 200px;
+    width: 220px;
+    height: 300px;
     display: flex;
 }
 
-.imagen {
+.imagen img {
     width: 100%;
 }
 
@@ -40,6 +42,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 30px;
+    padding: 70px 10px 5px 10px;
 }
 
 .contenido .detalle .informacion ul {
@@ -56,6 +60,91 @@
 .contenido .detalle .informacion i {
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 10px;
+}
 
+.contenido .detalle .informacion h2 {
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.contenido .detalle .informacion p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .contenido .detalle {
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+
+    .contenido .detalle {
+        width: 700px;
+        padding: 10px;
+    }
+
+    .contenido .detalle .imagen {
+        width: 200px;
+        height: 280px;
+    }
+
+    .contenido .detalle .informacion {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contenido .detalle {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 400px;
+        /* margin-top: 50px; */
+    }
+
+    .contenido .detalle .informacion {
+        width: 300px;
+        height: auto;
+    }
+
+    .contenido .detalle .imagen {
+        width: 180px;
+        height: 260px;
+        justify-content: center;
+    }
+
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    iframe {
+        width: 250px;
+        height: 170px;
+    }
+
+    .contenido .detalle {
+        gap: 50px;
+        width: 200px;
+    }
+
+    .contenido .detalle .informacion {
+        width: 200px;
+        height: auto;
+    }
+
+    .contenido .detalle .informacion .generos {
+        flex-direction: column;
+        gap: 5px;
+    }
 }

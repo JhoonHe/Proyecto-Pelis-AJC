@@ -34,3 +34,34 @@ nav button {
     border: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    nav ul {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    nav ul {
+        gap: 50px;
+    }
+}
