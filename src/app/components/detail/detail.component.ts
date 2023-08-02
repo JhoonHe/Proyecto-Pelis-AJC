@@ -35,6 +35,5 @@ export class DetailComponent {
       }
     })
     this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
-    console.log("peli " + this.contenido.titulo);
   }
 }

@@ -49,7 +49,6 @@ export class ContentComponent {
   }
 
   verPelicula(id: string) {
-    console.log(id);
     this.router.navigate(['/detalle', id]);
   }
 

@@ -144,12 +144,12 @@
     }
 
     .portadas {
-        gap: 30px;
+        gap: 10px;
     }
 
     .portadas .portada {
-        width: 140px;
-        height: 220px;
+        width: 100px;
+        height: 150px;
     }
 
 }

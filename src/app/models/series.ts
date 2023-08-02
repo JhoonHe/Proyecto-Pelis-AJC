@@ -21,7 +21,7 @@ const series = [
     calificacion: 9.5,
     genero: ["Crimen", "Drama"],
     duracion: "49min",
-    trailer: "ceqOTZnhgY8"
+    trailer: "HhesaQXLuRY"
   },
   {
     id: "2002",
@@ -201,7 +201,7 @@ const series = [
     calificacion: 8.1,
     genero: ["Crimen", "Drama", "Misterio"],
     duracion: "42min",
-    trailer: "NTYxiJBbEZk"
+    trailer: "R9qYmGXDX2M"
   },
   {
     id: "2017",
@@ -286,7 +286,7 @@ const series = [
     calificacion: 8.1,
     genero: ["Crimen", "Drama", "Fantasía"],
     duracion: "43min",
-    trailer: ""
+    trailer: "lpFiEZ-4Vtc"
   },
   {
     id: "2024",

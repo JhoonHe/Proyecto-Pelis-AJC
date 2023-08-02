@@ -63,13 +63,6 @@
     right: 10px;
 }
 
-.contenido .detalle .informacion h2 {
-    height: auto;
-    position: absolute;
-    top: 40px;
-    left: 0;
-}
-
 .contenido .detalle .informacion p {
     text-align: justify;
 }
@@ -135,11 +128,11 @@
 
     .contenido .detalle {
         gap: 50px;
-        width: 200px;
+        width: 85%;
     }
 
     .contenido .detalle .informacion {
-        width: 200px;
+        width: auto;
         height: auto;
     }
 
