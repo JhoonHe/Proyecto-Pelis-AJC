@@ -100,6 +100,7 @@ const movies = [
     titulo: "Misión de rescate",
     anioLanzamiento: 2020,
     descripcion: "Todo en todas partes al mismo tiempo cuenta la emocionante historia de Evelyn Wang, una inmigrante china que se ve envuelta en una aventura en la que debe explorar otros universos y conectarse con las vidas que podría haber llevado. La película explora temas de identidad, destino y el vasto potencial del multiverso, llevando a la protagonista a una aventura que trasciende las barreras del espacio y el tiempo.",
+    tipo: "pelicula",
     url: "https://cuevana3.eu/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcNu6VozUfD9jjQUjGuGBRoMlpYA.jpg&w=256&q=75",
     genero: ["Acción", "Suspenso"],
     duracion: "2:30",
