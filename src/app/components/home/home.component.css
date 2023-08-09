@@ -281,7 +281,6 @@
         align-items: center;
         gap: 50px;
         width: 400px;
-        /* margin-top: 50px; */
     }
 
     .modal .modal-content .contenido .detalle .informacion {
@@ -317,14 +316,35 @@
         height: 45px;
     }
 
-     .portadas {
+    .portadas {
         gap: 30px;
-        padding-top: 100px;
+        padding-top: 300px;
     }
 
     .portadas .portada {
         width: 140px;
         height: 220px;
+    }
+
+
+    .modal .modal-content iframe {
+        width: 250px;
+        height: 170px;
+    }
+
+    .modal .modal-content .contenido .detalle {
+        gap: 50px;
+        width: 85%;
+    }
+
+    .modal .modal-content .contenido .detalle .informacion {
+        width: auto;
+        height: auto;
+    }
+
+    .modal .modal-content .contenido .detalle .informacion .generos {
+        flex-direction: column;
+        gap: 5px;
     }
 
 }
