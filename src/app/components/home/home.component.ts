@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { movies } from 'src/app/models/movies';
 import { series } from 'src/app/models/series';
 import { movieSelected } from 'src/app/models/movieselected';
@@ -9,7 +9,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
   contenido: any = movies.concat(series);
   buscar: any = '';
   resultados: any[] = [];
@@ -29,8 +29,11 @@ export class HomeComponent {
   constructor(private sanitizer: DomSanitizer) {
 
   }
-
-
+  
+  ngOnInit(): void {
+      this.resultados = this.contenido;
+  }
+  
   busqueda() {
     if (this.buscar !== "" && this.genero === "") {
       this.resultados = this.contenido.filter((item: any) => {
@@ -58,6 +61,9 @@ export class HomeComponent {
           return item.genero.includes(this.genero);
         });
       }
+      if (this.genero === ""){
+      this.resultados = this.contenido;
+    }
     }, 100)
   }
 
