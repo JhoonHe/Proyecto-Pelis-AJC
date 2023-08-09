@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { movies } from 'src/app/models/movies';
 import { series } from 'src/app/models/series';
 import { ActivatedRoute } from '@angular/router';
@@ -35,10 +35,6 @@ export class ContentComponent {
     this.routeActivate.params.subscribe(params => {
       this.nombreCategoria = params['tipo'];
 
-      if (this.buscar === "") {
-        this.resultados = []
-      }
-
       if (this.nombreCategoria === "pelicula") {
         this.contenido = movies
         this.titulo = "Películas"
@@ -53,7 +49,7 @@ export class ContentComponent {
         this.genero = ""
       }
     });
-
+    this.resultados = this.contenido;
   }
   busqueda() {
 
@@ -81,6 +77,9 @@ export class ContentComponent {
         this.resultados = this.contenido.filter((item) => {
           return item.genero.includes(this.genero);
         });
+      }
+       if (this.genero === ""){
+        this.resultados = this.contenido;
       }
     }, 100)
   }
