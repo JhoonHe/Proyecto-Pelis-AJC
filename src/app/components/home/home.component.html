@@ -4,18 +4,49 @@
         <div class="buscador">
             <input type="text" placeholder="Buscar contenido" id="buscador" type="text" [(ngModel)]="buscar"
                 (input)="busqueda()" autocomplete="off">
-            <!-- <button><i class="fa-solid fa-magnifying-glass"></i></button> -->
         </div>
+        <div class="generos">
+            <div class="generos-buttons">
+                <button *ngFor="let generoOption of generoOptions" (click)="seleccionarGenero(generoOption)">
+                    {{ generoOption === '' ? 'Ninguno' : generoOption }}
+                </button>
+            </div>
+        </div>
+
     </div>
     <div class="portadas">
-        <div class="portada" *ngFor="let resultado of resultados" (click)="verPelicula(resultado.id)">
+        <div class="portada" *ngFor="let resultado of resultados" (click)="verPelicula(resultado)">
             <div class="categoria">
                 <p>{{resultado.tipo}}</p>
             </div>
             <img [src]="resultado.url">
-            <!-- <div class="genero" *ngFor="let item of resultado.genero">
-                {{item}}
-            </div> -->
+        </div>
+    </div>
+
+    <div *ngIf="modal" class="modal" (click)="closeModal()">
+        <div class="modal-content">
+            <div class="contenido">
+                <div class="detalle">
+                    <div class="imagen">
+                        <img [src]="selected.url">
+                    </div>
+                    <div class="informacion">
+                        <h2>{{selected.titulo}}</h2>
+                        <div class="generos">
+                            <ul *ngFor="let item of selected.genero">
+                                <li>{{item}}</li>
+                            </ul>
+                        </div>
+                        <p>{{selected.descripcion}}</p>
+                        <i>Calificacion: {{selected.calificacion}}</i>
+                    </div>
+
+                </div>
+
+                <iframe width="560" height="315" [src]="safeUrl" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </div>

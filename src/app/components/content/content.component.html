@@ -1,21 +1,59 @@
 <div class="contenido">
     <div class="elementos">
-        <h1>{{titulo}}</h1>
+        <h1>{{ titulo }}</h1>
         <div class="buscador">
-            <input type="text" placeholder="Buscar {{titulo | lowercase}}" id="buscador" type="text"
-                [(ngModel)]="buscar" (input)="busqueda()" autocomplete="off">
-            <!-- <button><i class="fa-solid fa-magnifying-glass"></i></button> -->
+            <input type="text" [placeholder]="'Buscar ' + (titulo | lowercase)" id="buscador" [(ngModel)]="buscar"
+                (input)="busqueda()" autocomplete="off">
         </div>
     </div>
+    <div class="generos">
+        <div *ngIf="pelicula" class="generos-peliculas">
+            <button *ngFor="let generoOption of generoOptionsPelicula" [class.active]="genero === generoOption"
+                (click)="seleccionarGenero(generoOption)">
+                {{ generoOption === '' ? 'Ninguno' : generoOption }}
+            </button>
+        </div>
+        <div *ngIf="serie" class="generos-series">
+            <button *ngFor="let generoOption of generoOptionsSerie" [class.active]="genero === generoOption"
+                (click)="seleccionarGenero(generoOption)">
+                {{ generoOption === '' ? 'Ninguno' : generoOption }}
+            </button>
+        </div>
+    </div>
+
     <div class="portadas">
-        <div class="portada" *ngFor="let resultado of resultados" (click)="verPelicula(resultado.id)">
+        <div class="portada" *ngFor="let resultado of resultados" (click)="verPelicula(resultado)">
             <div class="categoria">
                 <p>{{resultado.tipo}}</p>
             </div>
             <img [src]="resultado.url">
-            <!-- <div class="genero" *ngFor="let item of resultado.genero">
-                {{item}}
-            </div> -->
+        </div>
+    </div>
+
+    <div *ngIf="modal" class="modal" (click)="closeModal()">
+        <div class="modal-content">
+            <div class="contenido">
+                <div class="detalle">
+                    <div class="imagen">
+                        <img [src]="selected.url">
+                    </div>
+                    <div class="informacion">
+                        <h2>{{selected.titulo}}</h2>
+                        <div class="generos">
+                            <ul *ngFor="let item of selected.genero">
+                                <li>{{item}}</li>
+                            </ul>
+                        </div>
+                        <p>{{selected.descripcion}}</p>
+                        <i>Calificacion: {{selected.calificacion}}</i>
+                    </div>
+
+                </div>
+
+                <iframe width="560" height="315" [src]="safeUrl" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </div>
