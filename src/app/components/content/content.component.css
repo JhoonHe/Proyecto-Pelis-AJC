@@ -285,7 +285,7 @@
         height: 45px;
     }
 
-      .portadas {
+    .portadas {
         gap: 30px;
     }
 
@@ -294,9 +294,6 @@
         height: 220px;
     }
 
-<<<<<<< HEAD
-}
-=======
     .modal .modal-content iframe {
         width: 250px;
         height: 170px;
@@ -317,4 +314,3 @@
         gap: 5px;
     }
 }
->>>>>>> feature/generos-modal
