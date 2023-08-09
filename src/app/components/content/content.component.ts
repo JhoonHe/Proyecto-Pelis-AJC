@@ -37,19 +37,20 @@ export class ContentComponent {
 
       if (this.nombreCategoria === "pelicula") {
         this.contenido = movies
+    this.resultados = this.contenido;
         this.titulo = "Películas"
         this.pelicula = true
         this.serie = false
         this.genero = ""
       } else {
         this.contenido = series
+    this.resultados = this.contenido;
         this.titulo = "Series"
         this.pelicula = false
         this.serie = true
         this.genero = ""
       }
     });
-    this.resultados = this.contenido;
   }
   busqueda() {
 
