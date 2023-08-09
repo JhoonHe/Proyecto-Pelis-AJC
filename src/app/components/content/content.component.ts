@@ -79,7 +79,7 @@ export class ContentComponent {
           return item.genero.includes(this.genero);
         });
       }
-       if (this.genero === ""){
+       if (this.genero === "" && this.buscar === ""){
         this.resultados = this.contenido;
       }
     }, 100)
