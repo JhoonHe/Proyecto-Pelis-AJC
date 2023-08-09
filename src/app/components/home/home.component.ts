@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { movies } from 'src/app/models/movies';
 import { series } from 'src/app/models/series';
-import { Router } from '@angular/router';
+import { movieSelected } from 'src/app/models/movieselected';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home',
@@ -10,28 +11,70 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent {
   contenido: any = movies.concat(series);
-  buscar: any;
+  buscar: any = '';
   resultados: any[] = [];
+  modal = false;
+  selected: movieSelected;
+  code: string = "";
+  url: string = ``;
+  safeUrl: SafeResourceUrl;
+  genero: string = '';
+  generoOptions: string[] = [
+    "Comedia", "Terror", "Ficción", "Aventura", "Romance", "Fantasía", "Drama",
+    "fantasia", "Suspenso", "Acción", "Crimen", "Biografía", "Historia",
+    "Ciencia ficción", "Thriller", "Misterio", "Animación", ""
+  ];
 
-  constructor(private router: Router) {
+
+  constructor(private sanitizer: DomSanitizer) {
 
   }
+
 
   busqueda() {
-
-    if (this.buscar !== "") {
-      this.resultados = this.contenido.filter((pelicula: any) =>
-        pelicula.titulo.toLowerCase().includes(this.buscar.toLowerCase()) || pelicula.descripcion.toLowerCase().includes(this.buscar.toLowerCase())
-      );
-    } else {
-      this.resultados = []
-
+    if (this.buscar !== "" && this.genero === "") {
+      this.resultados = this.contenido.filter((item: any) => {
+        return (
+          item.titulo.toLowerCase().includes(this.buscar.toLowerCase()) ||
+          item.descripcion.toLowerCase().includes(this.buscar.toLowerCase())
+        );
+      });
+    }
+    else {
+      this.resultados = [];
     }
 
+    if (this.buscar !== "" && this.genero !== "") {
+      this.resultados = this.contenido.filter((item: any) => {
+        return (
+          item.titulo.toLowerCase().includes(this.buscar.toLowerCase()) && item.genero.includes(this.genero)
+        );
+      });
+    }
+
+    setTimeout(() => {
+      if (this.buscar === '') {
+        this.resultados = this.contenido.filter((item) => {
+          return item.genero.includes(this.genero);
+        });
+      }
+    }, 100)
   }
 
-  verPelicula(id: string) {
-    console.log(id);
-    this.router.navigate(['/detalle', id]);
+  verPelicula(pelicula: movieSelected) {
+    this.modal = true;
+    this.selected = pelicula
+    this.code = pelicula.trailer;
+    this.url = `https://www.youtube.com/embed/${this.code}`;
+    this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
+  }
+
+  closeModal() {
+    this.modal = false
+  }
+
+  seleccionarGenero(generoOption: string) {
+    this.genero = generoOption;
+    this.busqueda();
   }
 }

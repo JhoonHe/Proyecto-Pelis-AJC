@@ -12,7 +12,6 @@
 }
 
 nav {
-    /* border: 2px black solid; */
     background-color: black;
     display: flex;
     justify-content: space-between;

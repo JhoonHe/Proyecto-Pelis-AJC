@@ -7,7 +7,7 @@ const series = [
     tipo: "serie",
     url: "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg",
     calificacion: 9.3,
-    genero: ["Fantasy", "Drama"],
+    genero: ["Fantasía", "Drama"],
     duracion: "1h 14min",
     trailer: "KPLWWIOCOOQ"
   },
@@ -21,7 +21,7 @@ const series = [
     calificacion: 9.5,
     genero: ["Crimen", "Drama"],
     duracion: "49min",
-    trailer: "ceqOTZnhgY8"
+    trailer: "HhesaQXLuRY"
   },
   {
     id: "2002",
@@ -31,7 +31,7 @@ const series = [
     tipo: "serie",
     url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBfYF4iA8lIktTm6pvqM3joGZ45Kvi-48O1QrsIJIjgP70cZnd7FAryvNXv6s5oz2u8N0&usqp=CAU",
     calificacion: 8.7,
-    genero: ["Drama", "Fantasy", "Horror"],
+    genero: ["Drama", "Fantasía", "Terror"],
     duracion: "51min",
     trailer: "x7Yq9MJUqjY"
   },
@@ -43,7 +43,7 @@ const series = [
     tipo: "serie",
     url: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/07/poster-friends.jpg?tf=1200x",
     calificacion: 8.5,
-    genero: ["Comedy", "Romance"],
+    genero: ["Comedia", "Romance"],
     duracion: "22min",
     trailer: "MfvvhM6IJS0"
   },
@@ -55,7 +55,7 @@ const series = [
     tipo: "serie",
     url: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2018/03/crown-portada.jpg",
     calificacion: 8.6,
-    genero: ["Biography", "Drama", "History"],
+    genero: ["Biografía", "Drama", "Historia"],
     duracion: "58min",
     trailer: "zzBjNG1GKu4"
   },
@@ -67,7 +67,7 @@ const series = [
     tipo: "serie",
     url: "https://www.elespectadorimaginario.com/wp-content/webpc-passthru.php?src=http://www.elespectadorimaginario.com/wp-content/uploads/Black-Mirror-temporada-4.jpg&nocache=1",
     calificacion: 8.8,
-    genero: ["Drama", "Sci-Fi", "Thriller"],
+    genero: ["Drama", "Ciencia ficción", "Thriller"],
     duracion: "1h 3min",
     trailer: "rqJfoH1vfOg"
   },
@@ -163,7 +163,7 @@ const series = [
     tipo: "serie",
     url: "https://pbs.twimg.com/media/FcjIGAhXwAA3MTJ?format=jpg&name=4096x4096",
     calificacion: 9.4,
-    genero: ["Drama", "Historia", "Suspense"],
+    genero: ["Drama", "Historia", "Suspenso"],
     duracion: "1h 0min",
     trailer: "s9APLXM9Ei8"
   },
@@ -175,7 +175,7 @@ const series = [
     tipo: "serie",
     url: "https://www.lavanguardia.com/peliculas-series/images/serie/poster/2017/9/w1280/eCvGVqmxXcNvLMJxLAJeBZ2cUnM.jpg",
     calificacion: 8.2,
-    genero: ["Drama", "Médico"],
+    genero: ["Drama"],
     duracion: "43min",
     trailer: "lnY9FWUTY84"
   },
@@ -201,7 +201,7 @@ const series = [
     calificacion: 8.1,
     genero: ["Crimen", "Drama", "Misterio"],
     duracion: "42min",
-    trailer: "NTYxiJBbEZk"
+    trailer: "R9qYmGXDX2M"
   },
   {
     id: "2017",
@@ -286,7 +286,7 @@ const series = [
     calificacion: 8.1,
     genero: ["Crimen", "Drama", "Fantasía"],
     duracion: "43min",
-    trailer: ""
+    trailer: "lpFiEZ-4Vtc"
   },
   {
     id: "2024",

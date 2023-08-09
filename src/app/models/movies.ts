@@ -6,7 +6,7 @@ const movies = [
     descripcion: "La saga de 'El Padrino' sigue la vida de una poderosa familia de mafiosos liderada por Don Vito Corleone, un patriarca respetado y temido en el mundo del crimen organizado. Su hijo Michael, inicialmente reacio a involucrarse en los asuntos familiares, se ve arrastrado hacia el legado de su padre y se convierte en una figura clave en la organización. La película explora la complejidad de las relaciones familiares y los dilemas morales que enfrenta Michael mientras se sumerge cada vez más en la vida del crimen.",
     tipo: "pelicula",
     url: "https://ca-times.brightspotcdn.com/dims4/default/2314d53/2147483647/strip/true/crop/2093x3000+0+0/resize/1200x1720!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F47%2F95%2Fcbf137037b833a53a724fde3f53e%2Fcfdj8emgq7504ddbn1ibedbziqes-ufxmz-ypi0gordml8oigvx-qxnfyjdexxje48b9jsnhzr2hbbtg9-5bm2ewo-sfvcb9svtpufonjqohy-raixysjlgk7fagt3voiify9grgz0pkj-sysmn1pfblqffyiedjz8nszvhrheowg2imuyrmeklodsplgwx3wmznmclm-gx-cvc7m0lf7h7crd5meu1oztvsd9po-e1pldrzmjwobcwk9h7avlf0y4ew56xkel9filhfyidkf9rpndq4ic7-snlvnin85poimejwzyp6rq-q8qsqvmlvl2xaq3rsy-7axvtxqcpqinvjubaglw5risa6bqkfrpqowvdt29rhgoxnbsbi3dnwzldfjuimuizsg2hody3cu-y1kgk",
-    genero: ["comedia", "terror"],
+    genero: ["Comedia", "Terror"],
     duracion: "2:30",
     calificacion: 6,
     trailer: "v72XprPxy3E"
@@ -18,7 +18,7 @@ const movies = [
     descripcion: "Volver al Futuro cuenta la emocionante historia de Marty McFly, un joven que viaja accidentalmente en el tiempo a través de un DeLorean modificado por su excéntrico amigo Doc Brown. Marty se encuentra en el pasado y debe asegurarse de que sus padres se enamoren para asegurar su propia existencia en el futuro. La película combina elementos de ciencia ficción, aventura y romance mientras Marty intenta encontrar una manera de volver a casa mientras evita alterar el curso de la historia.",
     tipo: "pelicula",
     url: "https://www.tematika.com/media/catalog/Ilhsa/Imagenes/638724.jpg",
-    genero: ["ficción", "romance"],
+    genero: ["Ficción", "Aventura", "Ciencia ficción"],
     duracion: "2:30",
     calificacion: 8,
     trailer: "25vkwSdtLdk"
@@ -30,7 +30,7 @@ const movies = [
     descripcion: "Titanic es un romance épico situado en el trágico contexto del hundimiento del RMS Titanic. La película sigue la historia de amor entre Jack, un artista bohemio, y Rose, una joven adinerada comprometida con un hombre de negocios arrogante. A bordo del majestuoso Titanic, Jack y Rose viven una apasionada historia de amor que se enfrenta a los desafíos del destino y la tragedia. La película mezcla el romance con el impresionante telón de fondo del famoso naufragio del Titanic, creando una experiencia cinematográfica emotiva y cautivadora.",
     tipo: "pelicula",
     url: "https://www.abc.es/media/peliculas/000/044/428/titanic-1.jpg",
-    genero: ["romance"],
+    genero: ["Romance"],
     duracion: "2:30",
     calificacion: 9,
     trailer: "tA_qMdzvCvk"
@@ -42,7 +42,7 @@ const movies = [
     descripcion: "Basada en la obra literaria de J.R.R. Tolkien, El Señor de los Anillos: La Comunidad del Anillo sigue la aventura de un hobbit llamado Frodo Baggins, quien debe llevar un anillo malévolo hasta las llamas del Monte del Destino para destruirlo y evitar que caiga en manos del malvado Sauron. En compañía de un variado grupo de personajes, incluyendo elfos, enanos, humanos y otros hobbits, Frodo enfrenta peligros y desafíos mientras el destino de la Tierra Media descansa en sus hombros.",
     tipo: "pelicula",
     url: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2016/12/senor-anillos-retorno-rey.jpg",
-    genero: ["fantasia", "ficción"],
+    genero: ["Fantasía", "Ficción"],
     duracion: "2:30",
     calificacion: 6.3,
     trailer: "3GJp6p_mgPo"
@@ -54,7 +54,7 @@ const movies = [
     descripcion: "La La Land es un deslumbrante musical que narra la historia de Mia, una aspirante a actriz, y Sebastian, un apasionado pianista de jazz, mientras persiguen sus sueños en la ciudad de Los Ángeles. A través de números musicales cautivadores, la película celebra el amor, la ambición y la creatividad mientras los protagonistas enfrentan las dificultades de perseguir sus objetivos artísticos y mantener una relación en una ciudad que desafía sus sueños.",
     tipo: "pelicula",
     url: "https://musicart.xboxlive.com/7/b7e43e00-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
-    genero: ["romance", "aventura", "drama"],
+    genero: ["Romance", "Aventura", "Drama"],
     duracion: "2:30",
     calificacion: 9,
     trailer: "45s24h98iOc"
@@ -66,7 +66,7 @@ const movies = [
     descripcion: "Avengers: Endgame es el épico enfrentamiento final entre los héroes del universo Marvel y el temible villano Thanos. La película sigue a los Vengadores mientras buscan la forma de deshacer los devastadores efectos del chasquido de Thanos, que ha eliminado a la mitad de la población del universo. Con acción espectacular y giros sorprendentes, la película es un emocionante desenlace de la saga de los Vengadores.",
     tipo: "pelicula",
     url: "https://lumiere-a.akamaihd.net/v1/images/690x0w_f1b0509a.jpeg?region=0%2C0%2C690%2C1035",
-    genero: ["fantasia", "ficción", "aventura"],
+    genero: ["fantasia", "Ficción", "aventura"],
     duracion: "2:30",
     calificacion: 7.3,
     trailer: "PyakRSni-c0"
@@ -100,6 +100,7 @@ const movies = [
     titulo: "Misión de rescate",
     anioLanzamiento: 2020,
     descripcion: "Todo en todas partes al mismo tiempo cuenta la emocionante historia de Evelyn Wang, una inmigrante china que se ve envuelta en una aventura en la que debe explorar otros universos y conectarse con las vidas que podría haber llevado. La película explora temas de identidad, destino y el vasto potencial del multiverso, llevando a la protagonista a una aventura que trasciende las barreras del espacio y el tiempo.",
+    tipo: "pelicula",
     url: "https://cuevana3.eu/_next/image?url=https%3A%2F%2Fimage.tmdb.org%2Ft%2Fp%2Foriginal%2FcNu6VozUfD9jjQUjGuGBRoMlpYA.jpg&w=256&q=75",
     genero: ["Acción", "Suspenso"],
     duracion: "2:30",
@@ -149,7 +150,7 @@ const movies = [
     descripcion: "Diario de una pasión es un romántico drama que narra la conmovedora historia de Noah Calhoun y Allie Hamilton, dos jóvenes de diferentes ambientes sociales que se enamoran profundamente durante un verano inolvidable. Sin embargo, su amor se ve amenazado por la desaprobación de sus familias y los obstáculos del destino, incluyendo la guerra. A través de saltos en el tiempo, la película explora cómo el poder del amor verdadero puede superar las adversidades y perdurar a lo largo de los años.",
     tipo: "pelicula",
     url: "https://mx.web.img3.acsta.net/medias/nmedia/18/67/61/01/20070878.jpg",
-    genero: ["romance", "Suspenso"],
+    genero: ["Romance", "Suspenso"],
     duracion: "1h 56min",
     calificacion: 7.4,
     trailer: "YYz8i3hmqWA"
@@ -161,7 +162,7 @@ const movies = [
     descripcion: "Frozen es un encantador cuento de hadas moderno que sigue las aventuras de la princesa Anna, quien se embarca en un emocionante viaje para encontrar a su hermana Elsa, que se ha retirado a un palacio de hielo tras revelar sus poderes mágicos de hielo. La película celebra la importancia del amor fraternal y presenta un mensaje poderoso sobre la autoaceptación y la importancia de ser auténtico",
     tipo: "pelicula",
     url: "https://i.pinimg.com/originals/cc/1d/08/cc1d089897d53a1c3bbec368925fbc6f.jpg",
-    genero: ["Acción", "Suspenso"],
+    genero: ["Aventura", "Fantasía"],
     duracion: "1h 56min",
     calificacion: 7.4,
     trailer: "FmrnYJGQQug"
@@ -172,7 +173,7 @@ const movies = [
     anioLanzamiento: 2020,
     descripcion: "Up cuenta la emocionante historia de Carl Fredricksen, un viudo de 78 años que decide cumplir el sueño de su vida: elevar su casa con miles de globos y volar hacia América del Sur. Pero descubre que tiene un intrépido acompañante: Russell, un niño scout de 8 años. Juntos, emprenden una aventura llena de humor y emotividad, enfrentando desafíos inesperados mientras encuentran la verdadera amistad en el camino.",
     tipo: "pelicula",
-    url: "https://pics.filmaffinity.com/Up-555653789-large.jpg",
+    url: "https://images-ext-1.discordapp.net/external/_R0udXa0Rg1EEORzxcaSS27y7dHHCLeS-AwtJtuIwDc/https/picfiles.alphacoders.com/147/thumb-147204.jpg?width=278&height=418",
     genero: ["Acción", "Suspenso"],
     duracion: "1h 56min",
     calificacion: 7.4,
@@ -197,7 +198,7 @@ const movies = [
     descripcion: "After es un drama romántico que sigue la historia de Tessa Young, una joven universitaria cuya vida cambia drásticamente cuando conoce a Hardin Scott, un misterioso joven con un pasado turbulento. A medida que se enamoran, enfrentan numerosos desafíos y pruebas que ponen a prueba su relación y los obligan a enfrentar sus propias inseguridades. La película explora temas de amor, crecimiento personal y autodescubrimiento.",
     tipo: "pelicula",
     url: "https://www.eluniverso.com/resizer/ieyrzFWIVQPQwNqQm8IensTlb1A=/256x400/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/KEUEU7RMT5CMREFUXSASUEDNSY.jpg",
-    genero: ["romance", "drama"],
+    genero: ["Romance", "Drama"],
     duracion: "1h 40min",
     calificacion: 6.8,
     trailer: "3zjxECCWwrU"
